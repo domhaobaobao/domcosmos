@@ -1,0 +1,12 @@
+syntax = "proto3";
+package domcosmos.domcosmos;
+
+import "gogoproto/gogo.proto";
+import "domcosmos/domcosmos/params.proto";
+
+option go_package = "domcosmos/x/domcosmos/types";
+
+// GenesisState defines the domcosmos module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
