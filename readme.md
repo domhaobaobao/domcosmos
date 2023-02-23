@@ -1,4 +1,15 @@
 # domcosmos
+
+# necessary steps
+`ignite scaffold chain domcosmos`
+`ignite chain build`
+# this we do inside the startup script
+`ignite chain init`
+`domcosmosd start --grpc.address "0.0.0.0:9092"`
+# Note: 9092 port is to avoid conflicts with prometheus
+
+
+
 **domcosmos** is a blockchain built using Cosmos SDK and Tendermint and created with [Ignite CLI](https://ignite.com/cli).
 
 ## Get started
